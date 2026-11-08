@@ -7,7 +7,7 @@ function aut($title = NULL) {
 		echo '<table cellspacing="0" cellpadding="0"><tr>';
 		if ($_SERVER['PHP_SELF'] != '/index.php') {
 			echo '<td class="titles">';
-			echo '<a href="/index.php"><img src="/style/icons/icon_glavnaya.gif" alt="DS" /></a>';
+			echo '<a href="' . $set['siteurl'] . '/index.php"><img src="' . $set['siteurl'] . '/style/icons/icon_glavnaya.gif" alt="DS" /></a>';
 			echo '</td>'; 
 		}
 		echo '<td class="title">' . $title . '</td>';
