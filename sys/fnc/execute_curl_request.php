@@ -47,10 +47,8 @@ function execute_curl_request($url, $post_data=null, $referer=null, $cookie=null
 
 	if (curl_errno($ch)) {
 		$error_msg = curl_error($ch);
-		curl_close($ch);
 		return ['error' => $error_msg];
 	}
 
-	curl_close($ch);
 	return $ret;
 }

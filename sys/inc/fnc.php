@@ -384,7 +384,6 @@ if (isset($_SESSION['refer']) && $_SESSION['refer'] != NULL && !preg_match('#(ru
 			// 	curl_setopt($ch, CURLOPT_URL, 'https://dcms-social.ru/curl.php?site=' . $_SERVER['HTTP_HOST'] . '&version=' . $set['dcms_version'] . '&title=' . $set['title']);
 			// 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			// 	$data = curl_exec($ch);
-			// 	curl_close($ch);
 			// }
 			$od = opendir(H . 'sys/tmp/');
 			while ($rd = readdir($od)) {
